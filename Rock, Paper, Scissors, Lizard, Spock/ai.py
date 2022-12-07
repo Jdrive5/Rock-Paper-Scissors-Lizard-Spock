@@ -1,13 +1,12 @@
 from player import Player
-import random
+import random 
 from time import sleep
+
 class AI(Player):
-
-
-    def __init__(self,name):
+    def __init__(self):
         super().__init__()
         self.score = 0
-        self.name = name
+        self.name = 'AI'
     
     def choose_gesture(self):
         self.chosen_gesture = str(random.randint(0,4))
