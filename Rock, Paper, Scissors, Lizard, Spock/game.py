@@ -78,4 +78,20 @@ class Game:
                 else:
                     print("Try again")
                     sleep(2)
-                    
+            elif self.player_one.gesture_update == "Scissors":
+                if self.player_two.gesture_update == "Rock":
+                    print(f"Rock smashes scissors, {self.player_two.name} wins!")
+                    sleep(2)
+                elif self.player_two.gesture_update == "Paper":
+                    print(f"Scissors cut paper, you win!")
+                    sleep(2)
+                elif self.player_two.gesture_update == "Lizard":
+                    print(f"Scissors decapitates lizard, you win!")
+                    sleep(2)
+                elif self.player_two.gesture_update == "Spock":
+                    print(f"Spock smashes scissors, {self.player_two.name} wins!")
+                    sleep(2)
+                else:
+                    print("Try again")
+                    sleep(2)
+            
